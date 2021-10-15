@@ -1,0 +1,59 @@
+/*
+--------
+* Pheasant Buttons Layout
+--------
+*/
+.pheasant-buttons {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.pheasant-buttons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.9375rem 0;
+}
+.pheasant-buttons.has-external, .pheasant-buttons.has-external.two-col, .pheasant-buttons.has-external.three-col {
+  width: 100%;
+}
+
+/*
+--------
+* Media Queries
+--------
+*/
+
+@media only screen and (min-width: 768px) {
+  .pheasant-buttons.two-col {
+    width: 70%;
+  }
+  .pheasant-buttons.two-col > div {
+    width: 48%;
+  }
+  .pheasant-buttons.three-col {
+    width: 90%;
+  }
+  .pheasant-buttons.three-col > div {
+    width: 33%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .pheasant-buttons.two-col {
+    width: 40%;
+  }
+  .pheasant-buttons.two-col > div {
+    width: 48%;
+  }
+  .pheasant-buttons.three-col {
+    width: 60%;
+  }
+  .pheasant-buttons.three-col > div {
+    width: 33%;
+  }
+}

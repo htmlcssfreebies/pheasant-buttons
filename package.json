@@ -1,0 +1,26 @@
+{
+  "name": "pheasant-buttons",
+  "version": "1.0.0",
+  "description": "CSS buttons collection. These CSS buttons are modern, trendy, and carefully crafted to enhance the design interface.",
+  "main": "./src/js/pheasant-buttons.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlcssfreebies/pheasant-buttons.git"
+  },
+  "keywords": [
+    "frontend",
+    "css",
+    "html",
+    "button",
+    "style"
+  ],
+  "author": "HTMLCSSFreebies.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/htmlcssfreebies/pheasant-buttons/issues"
+  },
+  "homepage": "https://htmlcssfreebies.com/pheasant-buttons/"
+}

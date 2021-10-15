@@ -1,0 +1,315 @@
+/**
+ * Pheasant Buttons
+ *
+ * @author    https://htmlcssfreebies.com/pheasant-buttons/
+ * @copyright Copyright (c) 2021  HTMLCSSFreebies.com
+ * @license   MIT License, https://opensource.org/licenses/MIT
+ * @version   v1.0.0
+ */
+/*
+--------
+* Pheasant Buttons
+* Theme: Pheasant Demure Buttons
+--------
+*/
+/*
+--------
+* Pheasant Bounce Animation
+--------
+*/
+@keyframes pheasantBounce {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(5px) scale(0.9);
+  }
+  26% {
+    opacity: 0;
+    transform: translateX(-5px) scale(0.9);
+  }
+  55% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+.pheasant-demure-button {
+  /*
+   --------
+   * Color Palette
+   --------
+   */
+  --button-color-white: #fff;
+  --button-color-black: #000;
+  --button-color-salsa: #f15152;
+  /*
+   --------
+   * CSS Vars
+   --------
+   */
+  --button-light-bg-color: var(--button-color-white);
+  --button-light-text-color: var(--button-color-black);
+  --button-light-text-hover-color: var(--button-color-salsa);
+  --button-light-border-color: var(--button-color-white);
+  --button-dark-bg-color: var(--button-color-black);
+  --button-dark-text-color: var(--button-color-white);
+  --button-dark-text-hover-color: var(--button-color-salsa);
+  --button-dark-border-color: var(--button-color-black);
+  --button-icon-color: var(--button-color-salsa);
+  /*
+   --------
+   * Style
+   --------
+   */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  height: 3.125rem;
+  padding: 0 1.5625rem;
+  letter-spacing: 0.125rem;
+  overflow: hidden;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.pheasant-demure-button,
+button.pheasant-demure-button,
+input[type=submit].pheasant-demure-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.pheasant-demure-button .label {
+  white-space: nowrap;
+}
+.pheasant-demure-button.solid.light {
+  background-color: var(--button-light-bg-color);
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.solid.light:not(.hover):hover, .pheasant-demure-button.solid.light:not(.hover):focus {
+  color: var(--button-light-text-hover-color);
+}
+.pheasant-demure-button.solid.light.hover.blink:hover, .pheasant-demure-button.solid.light.hover.blink:focus {
+  background-color: var(--button-dark-bg-color);
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.solid.dark {
+  background-color: var(--button-dark-bg-color);
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.solid.dark:not(.hover):hover, .pheasant-demure-button.solid.dark:not(.hover):focus {
+  color: var(--button-light-text-hover-color);
+}
+.pheasant-demure-button.solid.dark.blink:hover, .pheasant-demure-button.solid.dark.blink:focus {
+  background-color: var(--button-light-bg-color);
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.icon .icon {
+  color: var(--button-icon-color);
+  font-size: 1rem;
+  margin-left: 0.3125rem;
+}
+.pheasant-demure-button.icon:hover .icon, .pheasant-demure-button.icon:focus .icon {
+  animation: pheasantBounce 1s infinite linear;
+}
+.pheasant-demure-button.round-corner {
+  border-radius: 1.5625rem;
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-right {
+  background: linear-gradient(to right, var(--button-dark-bg-color) 50%, var(--button-light-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: right bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-right:hover, .pheasant-demure-button.curtain-solid.curtain-light.curtain-to-right:focus {
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-right {
+  background: linear-gradient(to right, var(--button-light-bg-color) 50%, var(--button-dark-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: right bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-right:hover, .pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-right:focus {
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-left {
+  background: linear-gradient(to right, var(--button-light-bg-color) 50%, var(--button-dark-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-left:hover, .pheasant-demure-button.curtain-solid.curtain-light.curtain-to-left:focus {
+  background-position: right bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-left {
+  background: linear-gradient(to right, var(--button-dark-bg-color) 50%, var(--button-light-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-left:hover, .pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-left:focus {
+  background-position: right bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-bottom {
+  background: linear-gradient(to bottom, var(--button-dark-bg-color) 50%, var(--button-light-bg-color) 50%);
+  background-size: 100% 202%;
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-bottom:hover, .pheasant-demure-button.curtain-solid.curtain-light.curtain-to-bottom:focus {
+  background-position: left top;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-bottom {
+  background: linear-gradient(to bottom, var(--button-light-bg-color) 50%, var(--button-dark-bg-color) 50%);
+  background-size: 100% 202%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-bottom:hover, .pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-bottom:focus {
+  background-position: left top;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-top {
+  background: linear-gradient(to top, var(--button-dark-bg-color) 50%, var(--button-light-bg-color) 50%);
+  background-size: 100% 202%;
+  background-position: left top;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-light.curtain-to-top:hover, .pheasant-demure-button.curtain-solid.curtain-light.curtain-to-top:focus {
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-top {
+  background: linear-gradient(to top, var(--button-light-bg-color) 50%, var(--button-dark-bg-color) 50%);
+  background-size: 100% 202%;
+  background-position: left top;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-top:hover, .pheasant-demure-button.curtain-solid.curtain-dark.curtain-to-top:focus {
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.outline.light {
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-light-border-color);
+  background-color: transparent;
+}
+.pheasant-demure-button.outline.light:not(.hover):hover, .pheasant-demure-button.outline.light:not(.hover):focus {
+  color: var(--button-light-text-hover-color);
+}
+.pheasant-demure-button.outline.light.hover.blink:hover, .pheasant-demure-button.outline.light.hover.blink:focus {
+  background-color: var(--button-light-bg-color);
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.outline.dark {
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-dark-border-color);
+  background-color: transparent;
+}
+.pheasant-demure-button.outline.dark:not(.hover):hover, .pheasant-demure-button.outline.dark:not(.hover):focus {
+  color: var(--button-light-text-hover-color);
+}
+.pheasant-demure-button.outline.dark.hover.blink:hover, .pheasant-demure-button.outline.dark.hover.blink:focus {
+  background-color: var(--button-dark-bg-color);
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-right {
+  background: linear-gradient(to right, var(--button-light-bg-color) 50%, transparent 50%);
+  background-size: 202% 100%;
+  background-position: right bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-light-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-right:hover, .pheasant-demure-button.curtain-outline.curtain-light.curtain-to-right:focus {
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-right {
+  background: linear-gradient(to right, var(--button-dark-bg-color) 50%, transparent 50%);
+  background-size: 202% 100%;
+  background-position: right bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-dark-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-right:hover, .pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-right:focus {
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-left {
+  background: linear-gradient(to right, transparent 50%, var(--button-light-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-light-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-left:hover, .pheasant-demure-button.curtain-outline.curtain-light.curtain-to-left:focus {
+  background-position: right bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-left {
+  background: linear-gradient(to right, transparent 50%, var(--button-dark-bg-color) 50%);
+  background-size: 202% 100%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-dark-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-left:hover, .pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-left:focus {
+  background-position: right bottom;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-bottom {
+  background: linear-gradient(to bottom, var(--button-light-bg-color) 50%, transparent 50%);
+  background-size: 100% 202%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-light-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-bottom:hover, .pheasant-demure-button.curtain-outline.curtain-light.curtain-to-bottom:focus {
+  background-position: left top;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-bottom {
+  background: linear-gradient(to bottom, var(--button-dark-bg-color) 50%, transparent 50%);
+  background-size: 100% 202%;
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-dark-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-bottom:hover, .pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-bottom:focus {
+  background-position: left top;
+  color: var(--button-dark-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-top {
+  background: linear-gradient(to top, var(--button-light-bg-color) 50%, transparent 50%);
+  background-size: 100% 202%;
+  background-position: left top;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-light-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-light.curtain-to-top:hover, .pheasant-demure-button.curtain-outline.curtain-light.curtain-to-top:focus {
+  background-position: left bottom;
+  color: var(--button-light-text-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-top {
+  background: linear-gradient(to top, var(--button-dark-bg-color) 50%, transparent 50%);
+  background-size: 100% 202%;
+  background-position: left top;
+  color: var(--button-dark-text-color);
+  border: 1px solid var(--button-dark-border-color);
+}
+.pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-top:hover, .pheasant-demure-button.curtain-outline.curtain-dark.curtain-to-top:focus {
+  background-position: left bottom;
+  color: var(--button-dark-text-color);
+}
