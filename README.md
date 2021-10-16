@@ -50,10 +50,16 @@ Pheasant Buttons Reset and Layout styles are Optional. You are not required to i
 <link rel="stylesheet" href="./dist/css/pheasant-demure-buttons.css" type="text/css" media="all" />
 ```
 
-### Pheasant Buttons Themes
+## Pheasant Buttons Themes
 
 Pheasant Buttons have the following themes. Please visit the themes page for the setup and demo.
 
-- [Pheasant Demure Buttons](https://htmlcssfreebies.com/pheasant-demure-buttons/)
+### Pheasant Demure Buttons
+
+Pheasant Demure Buttons are minimal, elegant, and easy to use.
+
+![](https://github.com/htmlcssfreebies/pheasant-buttons/blob/main/dist/images/pheasant-demure-buttons.jpg)
+
+- [Pheasant Demure Buttons Setup and Demo](https://htmlcssfreebies.com/pheasant-demure-buttons/)
 
 Build With Love :heart:
